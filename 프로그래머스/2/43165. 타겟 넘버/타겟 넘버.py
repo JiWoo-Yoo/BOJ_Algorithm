@@ -1,6 +1,5 @@
 def solution(numbers, target):
     answer = 0
-    add = 0
     def dfs(index, add):
         nonlocal answer
         if index == len(numbers):
