@@ -10,7 +10,7 @@ def solution(N, number):
 
         for i in range(cnt - 1):  # (1, n-1) 부터 (n-1, 1)까지 사칙연산
             for op1 in set_list[i]:
-                for op2 in set_list[-i - 1]:
+                for op2 in set_list[-i-1]:
                     partial_set.add(op1 + op2)
                     partial_set.add(op1 * op2)
                     partial_set.add(op1 - op2)
